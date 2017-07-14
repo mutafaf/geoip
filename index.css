@@ -1,0 +1,104 @@
+body {
+  font-family: monospace;
+  color: #999;
+}
+.display-center-flex, .footer {
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #d3e458;
+    padding: 10px;
+    text-align: center;
+}
+.footer {
+  border: none;
+  display: list-item;
+}
+
+.flex-item {
+    min-width: 200px;
+    line-height: 20px;
+    color: green;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+.margin-tb-30 {
+  margin: 30px 0;
+}
+.input-class {
+  width: 100%;
+  font-size: 20px;
+  height: 50px;
+  margin: 20px 0;
+  border-radius: 0;
+}
+.well {
+  margin-top: 0px;
+  border-radius: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding-top: 0;
+}
+.btn {
+  border-radius: 0;
+  background: #aeea00;
+  border: #aeea00;
+}
+.btn:hover {
+  background: #d3e458;
+}
+.form-control {
+  border: 1px solid #aeea00;
+}
+.form-control:focus {
+  border-color: #aeea00;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(174, 234, 0)
+;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(174, 234, 0);
+}
+.form-control::-webkit-input-placeholder,
+.form-control::-moz-placeholder,
+.form-control:-ms-input-placeholder,
+.form-control:-moz-placeholder {
+  color: #E0E0E0;
+}
+
+.btn:focus {
+  outline: none;
+}
+.btn-success.active.focus, .btn-success.active:focus, .btn-success.active:hover, .btn-success:active.focus, .btn-success:active:focus, .btn-success:active:hover, .open>.dropdown-toggle.btn-success.focus, .open>.dropdown-toggle.btn-success:focus, .open>.dropdown-toggle.btn-success:hover, .btn-success.active, .btn-success:active, .open>.dropdown-toggle.btn-success, .btn-success.focus, .btn-success:focus {
+  background-color: #aeea00;
+  border-color: #aeea00;
+}
+
+h4, .h4 {
+  margin: 4px;
+  color: #999999;
+}
+h1 {
+  padding: 19px;
+  padding-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+h1 > a  {
+  color: #aeea00;
+}
+a {
+  color: #999999;
+}
+ a:hover  {
+  color: #d3e458;
+  text-decoration: none;
+}
+
