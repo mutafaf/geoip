@@ -5,8 +5,8 @@ angular.module('GeoIPLocator', [])
         ip_address = ""
         geo_ip_locator.get_location = function() {
 
-            if(geo_ip_locator.heading != undefined){
-                ip_address = geo_ip_locator.heading
+            if(geo_ip_locator.ipAddress != undefined){
+                ip_address = geo_ip_locator.ipAddress
             }
             $http.get("https://freegeoip.net/json/"+ip_address).then(function (response) {
 
@@ -21,7 +21,8 @@ angular.module('GeoIPLocator', [])
             geo_ip_locator.longitude = response.data.longitude
             geo_ip_locator.ip = response.data.ip
             })
-
         };
         geo_ip_locator.get_location();
     });
+
+
